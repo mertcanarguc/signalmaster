@@ -3,7 +3,7 @@
   "server": {
     "port": 8888,
     "/* secure */": "/* whether this connects via https */",
-    "secure": false,
+    "secure": true,
     "key": null,
     "cert": null,
     "password": null
@@ -18,10 +18,22 @@
     }
   ],
   "turnservers": [
+    // {
+    //   "urls": ["turn:your.turn.servers.here"],
+    //   "secret": "turnserversharedsecret",
+    //   "expiry": 86400
+    // }
     {
-      "urls": ["turn:your.turn.servers.here"],
-      "secret": "turnserversharedsecret",
-      "expiry": 86400
+      "username": "euwF3pSnxG82BZbh-v_v-HA0AI64dU11pI8G7sEqA-OUxlA_rMmTFkvwY-gqD5LEAAAAAGCqD_VtZXJ0Y2FuYXJndWM=",
+      "credential": "877aab96-bb9f-11eb-9e93-0242ac140004",
+      "urls": [
+        "turn:eu-turn1.xirsys.com:80?transport=udp",
+        "turn:eu-turn1.xirsys.com:3478?transport=udp",
+        "turn:eu-turn1.xirsys.com:80?transport=tcp",
+        "turn:eu-turn1.xirsys.com:3478?transport=tcp",
+        "turns:eu-turn1.xirsys.com:443?transport=tcp",
+        "turns:eu-turn1.xirsys.com:5349?transport=tcp"
+      ]
     }
   ]
 }
